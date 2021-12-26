@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* bg */
+.bg {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  z-index: -10;
+  animation: upDown 14s infinite;
+
+  &__img {
+    position: absolute;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+
+    &:nth-of-type(1) {
+      top: 14%;
+      left: 10%;
+      animation-name: rotation-right;
+      animation-duration: 8s;
+      fill: #fffaf0;
+    }
+
+    &:nth-of-type(2) {
+      top: 38%;
+      left: 90%;
+      fill: #d6f0ff;
+    }
+
+    &:nth-of-type(3) {
+      top: 66%;
+      left: 40%;
+      animation-name: rotation-left;
+      animation-duration: 10s;
+      fill: #deffef;
+    }
+
+    &:nth-of-type(4) {
+      top: 28%;
+      left: 58%;
+      animation-name: rotation-left;
+      animation-duration: 5s;
+      fill: #dcd6ff;
+    }
+
+    &:nth-of-type(5) {
+      top: 52%;
+      left: 6%;
+      fill: #ffdede;
+    }
+
+    &:nth-of-type(6) {
+      top: 86%;
+      left: 67%;
+      animation-name: rotation-right;
+      animation-duration: 3s;
+      fill: #ffeded;
+    }
+
+    &:nth-of-type(7) {
+      top: 90%;
+      left: 30%;
+      animation-name: rotation-left;
+      animation-duration: 12s;
+      fill: #dcd6ff;
+    }
+
+    &:nth-of-type(8) {
+      top: 5%;
+      left: 78%;
+      animation-name: rotation-left;
+      animation-duration: 5s;
+      fill: #ffdede;
+    }
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotation-right {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation-left {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.lower__bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#fff, 58%);
+}

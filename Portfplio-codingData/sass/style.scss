@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/**********************************
+reset
+***********************************/
+@use "reset";
+
+/**********************************
+layout
+***********************************/
+@use "layout/background";
+@use "layout/common";
+@use "layout/header";
+@use "layout/footer";
+@use "layout/main";
+
+/**********************************
+sub page
+***********************************/
+@use "layout/works";

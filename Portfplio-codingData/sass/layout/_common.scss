@@ -1,0 +1,75 @@
+@charset "utf-8";
+@use "../global";
+
+/* body */
+body {
+  font-family: "Ubuntu", "Noto Sans JP", sans-serif;
+  color: #707070;
+  font-size: 16px;
+
+  &.js-open {
+    overflow: hidden;
+  }
+}
+
+/* section */
+.section__ttl {
+  font-size: 40px;
+  text-align: center;
+  color: #82aac4;
+}
+
+.section__inner {
+  padding-top: global.$spacing-120;
+}
+
+/* fade up */
+.js-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
+/* button */ 
+.btn {
+  padding-left: 40px;
+  display: block;
+  text-decoration: none;
+  user-select: none;
+  color: #333;
+  width: 240px;
+  height: 60px;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 60px;
+  border-radius: 14px;
+  border: 1px solid global.$mainColor;
+  box-shadow: 6px 6px 10px global.$mainColor;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 14px;
+    background-color: global.$mainColor;
+    z-index: -1;
+    transition: 0.5s;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+  
+  &::after {
+    position: absolute;
+    top: 6px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+  }
+}

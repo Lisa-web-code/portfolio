@@ -1,0 +1,144 @@
+@charset "utf-8";
+@use "../global";
+
+.lower__works {
+  &__inner {
+    margin-top: global.$spacing-120;
+  }
+
+  &__ttl {
+    &__link {
+      color: inherit;
+    }
+  }
+
+  &__name,
+  &__explanation {
+    margin-top: global.$spacing-24;
+    line-height: 1.6;
+  }
+
+  &__name {
+    font-size: 32px;
+    color: global.$mainColor;
+  }
+
+  &__img {
+    box-shadow: 0px 0px 10px -4px #777777;
+  }
+
+  &__img-fv {
+    margin-top: global.$spacing-64;
+    width: 100%;
+  }
+
+  &__buttons {
+    margin: global.$spacing-64 auto 0;
+  }
+
+  &__btn:first-child {
+    margin: 0 auto;
+  }
+
+  &__btn:not(:first-child) {
+    margin: global.$spacing-32 auto 0;
+  }
+
+  &__toCode::after {
+    content: url(../img/works__btn-arrow1.svg);
+  }
+
+  &__toSite::after {
+    content: url(../img/works__btn-arrow2.svg);
+  }
+
+  &__passwords {
+    margin: global.$spacing-24 auto 0;
+    max-width: 240px;
+    text-align: center;
+  }
+
+  &__password {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__content {
+    margin-top: global.$spacing-64;
+  }
+
+  &__point {
+    font-size: 24px;
+    color: global.$mainColor;
+  }
+
+  &__subcontent {
+    list-style: none;
+  }
+
+  &__texts:first-of-type {
+    margin-top: global.$spacing-32;
+  }
+
+  &__texts + &__texts {
+    margin-top: global.$spacing-64;
+  }
+
+  &__subheading {
+    font-size: 18px;
+    color: global.$mainColor;
+  }
+
+  &__sentence,
+  &__img {
+    margin-top: global.$spacing-16;
+  }
+
+  &__sentence {
+    line-height: 1.8;
+  }
+
+  &__img-err {
+    margin-right: auto;
+    width: 360px;
+    max-width: 100%;
+  }
+
+  &__policy {
+    @include global.flex();
+  }
+
+  &__img-policy {
+    width: 48%;
+  }
+
+  @media screen and (min-width: 600px) {
+    &__img-fv,
+    &__content {
+      margin-top: global.$spacing-96;
+    }
+
+    &__buttons-flex {
+      @include global.flex();
+      max-width: 600px;
+    }
+
+    &__buttons-flex > &__btn:first-child,
+    &__buttons-flex > &__btn:not(:first-child) {
+      margin: 0;
+    }
+
+    &__passwords {
+      max-width: 600px;
+    }
+
+    &__password {
+      margin-left: auto;
+      max-width: 240px;
+    }
+  }
+}

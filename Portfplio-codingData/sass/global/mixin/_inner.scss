@@ -1,0 +1,8 @@
+@mixin inner-sp {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@mixin inner-pc {
+  max-width: 900px;
+}

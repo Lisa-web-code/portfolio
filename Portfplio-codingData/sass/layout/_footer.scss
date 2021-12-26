@@ -1,0 +1,16 @@
+@charset "utf-8";
+@use "../global";
+
+.footer {
+  background-color: global.$mainColor;
+  margin-top: global.$spacing-120;
+  padding: global.$spacing-40 0;
+  text-align: center;
+  position: relative;
+  z-index: 90;
+
+  &__text {
+    color: #fff;
+    font-size: 12px;
+  }
+}
