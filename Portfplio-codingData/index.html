@@ -19,7 +19,7 @@
   <!-- loading -->
   <div class="loading">
     <div class="loading__circle">
-      <img src="img/icon.png" alt="アイコン" class="loading__icon">
+      <img src="img/icon.png" alt="ローディングアイコン" class="loading__icon">
     </div>
     <div class="loading__spin"></div>
   </div>
@@ -29,23 +29,23 @@
   <header class="header js-header">
     <div class="header__inner">
       <a href="index.html">
-        <img src="img/header__nav__icon.png" alt="アイコン" class="header__icon">
+        <img src="img/header__nav__icon.png" alt="ホームに戻る" class="header__nav__icon">
       </a>
       
       <!-- nav-pc -->
       <nav class="header__nav-pc">
-        <ul class="header__list-pc">
-          <li class="header__item-pc">
-            <a href ="#vision" class="header__item-pc__link">Vision</a>
+        <ul class="header__nav__list-pc">
+          <li class="header__nav__item-pc">
+            <a href ="#vision" class="header__nav__item-pc__link">Vision</a>
           </li>
-          <li class="header__item-pc">
-            <a href ="#works" class="header__item-pc__link">Works</a>
+          <li class="header__nav__item-pc">
+            <a href ="#works" class="header__nav__item-pc__link">Works</a>
           </li>
-          <li class="header__item-pc">
-            <a href ="#skills" class="header__item-pc__link">Skills</a>
+          <li class="header__nav__item-pc">
+            <a href ="#skills" class="header__nav__item-pc__link">Skills</a>
           </li>
-          <li class="header__item-pc">
-            <a href ="#about" class="header__item-pc__link">About</a>
+          <li class="header__nav__item-pc">
+            <a href ="#about" class="header__nav__item-pc__link">About</a>
           </li>
         </ul>
       </nav>
@@ -53,23 +53,23 @@
 
       <!-- nav-sp -->
       <nav class="header__nav-sp">
-        <ul class="header__list-sp">
-          <li class="header__item-sp">
+        <ul class="header__nav__list-sp">
+          <li class="header__nav__item-sp">
             <a href="index.html">
-              <img src="img/header__nav__icon.png" alt="アイコン" class="header__icon">
+              <img src="img/header__nav__icon.png" alt="ホームに戻る" class="header__nav__icon">
             </a>
           </li>
-          <li class="header__item-sp">
-            <a href ="#vision" class="header__item-sp__link">Vision</a>
+          <li class="header__nav__item-sp">
+            <a href ="#vision" class="header__nav__item-sp__link">Vision</a>
           </li>
-          <li class="header__item-sp">
-            <a href ="#works" class="header__item-sp__link">Works</a>
+          <li class="header__nav__item-sp">
+            <a href ="#works" class="header__nav__item-sp__link">Works</a>
           </li>
-          <li class="header__item-sp">
-            <a href ="#skills" class="header__item-sp__link">Skills</a>
+          <li class="header__nav__item-sp">
+            <a href ="#skills" class="header__nav__item-sp__link">Skills</a>
           </li>
-          <li class="header__item-sp">
-            <a href ="#about" class="header__item-sp__link">About</a>
+          <li class="header__nav__item-sp">
+            <a href ="#about" class="header__nav__item-sp__link">About</a>
           </li>
         </ul>
       </nav>
@@ -133,7 +133,7 @@
       <span>o</span>
     </h1>
     <div class="fv__scroll">
-      <p class="scroll">Scroll Down</p>
+      <a href="#vision" class="fv__scroll__link">Scroll Down</a>
     </div>
   </section>
   <!-- /first view -->
@@ -145,13 +145,13 @@
     <section class="vision js-trigger" id="vision">
       <div class="section__inner vision__inner">
         <h2 class="section__ttl js-fade">Vision</h2>
-        <p class="vision__copy"><span class="js-underline">ユーザーの興味を引くサイトを作ることができる実装者</span>を目指します！</p>
+        <p class="vision__copy"><span class="js-underline">どんなデザインも再現できる実装者</span>を目指します！</p>
         <div class="vision__spiralStaircase">
           <img src="img/vision__img.png" alt="螺旋階段" class="vision__img">
-          <div class="vision__texts">
-            <p class="vision__text js-slide js-slide-left">ユーザーが「もっとこのサイトを見たい」と思うようなサイトを作れるようになる</p>
-            <p class="vision__text js-slide js-slide-right">複雑なアニメーションをつけられるようになる</p>
+          <div class="vision__textWrap">
             <p class="vision__text js-slide js-slide-left">デザインの意図を理解したコーディングができるようになる</p>
+            <p class="vision__text js-slide js-slide-right">デザインの知識も身に着ける</p>
+            <p class="vision__text js-slide js-slide-left">複雑なアニメーションをつけられるようになる</p>
             <p class="vision__text js-slide js-slide-right">jQuery以外でもアニメーションを実装できるようになる</p>
             <p class="vision__text js-slide js-slide-left">適切なマークアップ、保守性の高いコードを書く</p>
             <p class="vision__text js-slide js-slide-right">デザインを忠実に再現</p>
@@ -170,11 +170,11 @@
           <li class="works__content js-fade">
             <a href="works_portfolio.html" class="works__link">
               <div class="works__frame">
-                <img src="img/works__img-portfolio.png" alt="ポートフォリオサイト" class="works__img">
+                <img src="img/works__img-portfolio.png" class="works__img">
               </div>
               <div class="works__description">     
                 <p class="works__ttl">りさ's portfolio</p>
-                <div class="works__texts">
+                <div class="works__textWrap">
                   <p class="works__text">デザインとコーディング</p>
                   <p class="works__text">トップページ + 下層２ページ</p>
                   <p class="works__text">レスポンシブ対応</p>
@@ -186,11 +186,11 @@
           <li class="works__content js-fade">
             <a href="works_cresta.html" class="works__link">
               <div class="works__frame">
-                <img src="img/works__img-digsmile.png" alt="DIGSMILE.INC" class="works__img">
+                <img src="img/works__img-digsmile.png" class="works__img">
               </div>
               <div class="works__description">
                 <p class="works__ttl">DIGSMILE.INC</p>
-                <div class="works__texts">
+                <div class="works__textWrap">
                   <p class="works__text">コーディング練習用カンプからのコーディング</p>
                   <p class="works__text">トップページ + 下層２ページ</p>
                   <p class="works__text">レスポンシブ対応</p>
@@ -241,7 +241,7 @@
           <h3 class="about__ttl js-fade">Me</h3>
           <div class="me__content">
             <div class="me__container js-fade">
-              <img src="img/about__me.jpg" class="me__img" alt="りさの写真">
+              <img src="img/about__me.jpg" class="me__img">
             </div>
             <div class="me__text js-fade">
               <p class="me__name">あんどう　りさ</p>
@@ -255,7 +255,7 @@
           <h3 class="about__ttl js-fade">Studying</h3>
           <div class="studying__content js-fade">
             <h4 class="studying__ttl">初めてhtmlを触る</h4>
-            <p class="studying__text">現職の総務の仕事の1つとして、社内のウェブサイトへ通知文などを掲載する担当となり、初めてhtmlに出会う。<br>htmlファイルをコピペし、通知文のタイトルや添付ファイルへのリンクのみを変更してサーバーへアップしていた。</p>
+            <p class="studying__text">現職の総務の仕事の1つとして、社内のウェブサイトへ通知文などを掲載する担当となり、初めてhtmlに出会う。<br>htmlファイルをコピペし、通知文のタイトルや添付ファイルへのリンクを変更してサーバーへアップしていた。</p>
           </div>
           <div class="studying__content js-fade">
             <h4 class="studying__ttl">タグを触る</h4>
