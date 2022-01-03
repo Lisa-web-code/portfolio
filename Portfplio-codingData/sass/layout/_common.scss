@@ -30,7 +30,7 @@ body {
   transition: all 1s;
 }
 
-/* button */ 
+/* button */
 .btn {
   padding-left: 40px;
   display: block;
@@ -63,7 +63,7 @@ body {
   &:hover::before {
     width: 100%;
   }
-  
+
   &::after {
     position: absolute;
     top: 6px;

@@ -87,7 +87,7 @@ $(function (){
     $('body').toggleClass('js-open');
   });
 
-  $('.header__item-sp__link').click(function(){
+  $('.header__nav__item-sp__link').click(function(){
     $('.header__nav-sp').fadeToggle();
     $('.header__hamburgerMenu').toggleClass('js-open');
     $('body').toggleClass('js-open');
